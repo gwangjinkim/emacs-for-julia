@@ -33,7 +33,7 @@
 (use-package julia-repl
   :ensure t
   :hook (julia-mode . julia-repl-mode)
-  :init (setenv "JULIA_HUM_THREADS" "8")
+  :init (setenv "JULIA_NUM_THREADS" "8")
   :config
   ;; Set the terminal backend
   (julia-repl-set-terminal-backend 'vterm)
